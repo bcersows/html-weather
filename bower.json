@@ -1,0 +1,35 @@
+{
+  "name": "html-weather",
+  "description": "Simple and small HTML weather overlays.",
+  "main": [
+    "dist/js/html-weather.js",
+    "dist/css/html-weather.css"
+  ],
+  "dependencies": {
+    "jquery": "~3.1.1"
+  },
+  "moduleType": [
+    "globals"  
+  ],
+  "keywords": [
+    "bcersows",
+    "html",
+    "css",
+    "weather",
+    "snow",
+    "rain",
+    "sun"
+  ],
+  "authors": [
+    "bcersows"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": false
+}

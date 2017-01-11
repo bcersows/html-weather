@@ -1,12 +1,4 @@
 <?php
-/*require_once("./tools/minify/src/Minify.php");
-require_once("./tools/minify/src/CSS.php");
-require_once("./tools/minify/src/Exception.php");
-require_once("./tools/minify/src/JS.php");
-require_once './tools/path-converter/src/Converter.php';
-require_once("./tools/minify/src/Exceptions/BasicException.php");
-require_once("./tools/minify/src/Exceptions/FileImportException.php");
-require_once("./tools/minify/src/Exceptions/IOException.php");*/
 $path = './tools';
 require_once $path . '/minify/src/Minify.php';
 require_once $path . '/minify/src/CSS.php';
