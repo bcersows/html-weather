@@ -1,0 +1,6 @@
+[submodule "tools/minify"]
+	path = tools/minify
+	url = https://github.com/matthiasmullie/minify
+[submodule "tools/path-converter"]
+	path = tools/path-converter
+	url = https://github.com/matthiasmullie/path-converter
