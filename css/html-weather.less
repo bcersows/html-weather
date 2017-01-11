@@ -1,0 +1,98 @@
+/*
+ * Made with <3 by bcersows.
+ * version 1.0.0
+ */
+.weather {
+  position: relative;
+  
+  .weather-wrapper {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    div {
+      position: absolute;
+    }
+
+    &.rain {
+      @keyframes drops {
+        from {top: 0px;}
+        to {top: 100%;}
+      }
+      div {
+        animation: drops 2s linear infinite;
+        background: linear-gradient(lighten(blue, 20%), blue);
+        height: 20px;
+        opacity:0.5;
+        top: 0;
+        transform: rotate(5deg);
+        width: 5px;
+      }
+    }
+
+    &.snow {
+      @keyframes snow {
+        @random: `(Math.random() - 0.5) * 20`;
+        0%  { margin-left: ~"@{random}px"; top: 0; }
+        @random: `(Math.random() - 0.5) * 20`;
+        10%  { margin-left: ~"@{random}px"; top: 10%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        20%  { margin-left: ~"@{random}px"; top: 20%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        30%  { margin-left: ~"@{random}px"; top: 30%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        40%  { margin-left: ~"@{random}px"; top: 40%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        50%  { margin-left: ~"@{random}px"; top: 50%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        60%  { margin-left: ~"@{random}px"; top: 60%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        70%  { margin-left: ~"@{random}px"; top: 70%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        80%  { margin-left: ~"@{random}px"; top: 80%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        90%  { margin-left: ~"@{random}px"; top: 90%; }
+        @random: `(Math.random() - 0.5) * 20`;
+        100%  { margin-left: ~"@{random}px"; top: 100%; }
+      }
+
+      div {
+        animation: snow 10s linear infinite;
+
+        &:after {
+          content: "*";
+        }
+      }
+    }
+
+    &.sun {
+      @keyframes rays {
+        from {height: 0px;}
+        to {height: 100%;}
+      }
+      div {
+        animation: rays 3s linear infinite;
+        background: linear-gradient(#fbac13, lighten(#fbac13, 20%));
+        height: 290px;
+        opacity:0.3;
+        top: -5px;
+        transform: rotate(10deg);
+        width: 5px;
+      }
+    }
+
+    // create delay
+    .generate-delay(10);
+    .generate-delay(@n, @i: 1) when (@i =< @n) {
+      @random: `Math.random()`;
+      div:nth-of-type(@{i}n) {
+        animation-delay: ~"@{random}s";
+        left: (@i - 1)*(100%/(@n - 1));
+      }
+      .generate-delay(@n, (@i + 1));
+    }
+  }
+}
