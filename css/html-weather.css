@@ -9,6 +9,7 @@
   height: 100%;
   left: 0;
   overflow: hidden;
+  pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
@@ -35,47 +36,47 @@
 }
 @keyframes snow {
   0% {
-    margin-left: 7.803179042934505px;
+    margin-left: -6.060481499284411px;
     top: 0;
   }
   10% {
-    margin-left: -3.2653765841679983px;
+    margin-left: 1.415616479784636px;
     top: 10%;
   }
   20% {
-    margin-left: -7.658773957834821px;
+    margin-left: -9.431411274140444px;
     top: 20%;
   }
   30% {
-    margin-left: 0.37526110347517516px;
+    margin-left: -5.922848195657933px;
     top: 30%;
   }
   40% {
-    margin-left: -2.191741531859628px;
+    margin-left: 3.828541772727543px;
     top: 40%;
   }
   50% {
-    margin-left: 3.2741504450863212px;
+    margin-left: -4.1337925968279965px;
     top: 50%;
   }
   60% {
-    margin-left: -1.564272619999545px;
+    margin-left: 5.1819335136828215px;
     top: 60%;
   }
   70% {
-    margin-left: 3.667258822668815px;
+    margin-left: -0.33968276510535134px;
     top: 70%;
   }
   80% {
-    margin-left: -9.65996465702685px;
+    margin-left: -5.756751933158841px;
     top: 80%;
   }
   90% {
-    margin-left: -5.493734466619493px;
+    margin-left: 1.46298494860845px;
     top: 90%;
   }
   100% {
-    margin-left: 4.797205654724506px;
+    margin-left: -7.804864420327218px;
     top: 100%;
   }
 }
@@ -103,43 +104,43 @@
   width: 5px;
 }
 .weather .weather-wrapper div:nth-of-type(1n) {
-  animation-delay: 0.7630236659909013s;
+  animation-delay: 0.4228261809132343s;
   left: 0%;
 }
 .weather .weather-wrapper div:nth-of-type(2n) {
-  animation-delay: 0.8584650827415121s;
+  animation-delay: 0.06038290607005603s;
   left: 11.11111111%;
 }
 .weather .weather-wrapper div:nth-of-type(3n) {
-  animation-delay: 0.4102631354741375s;
+  animation-delay: 0.26409290452952394s;
   left: 22.22222222%;
 }
 .weather .weather-wrapper div:nth-of-type(4n) {
-  animation-delay: 0.20551408030648166s;
+  animation-delay: 0.618950184592965s;
   left: 33.33333333%;
 }
 .weather .weather-wrapper div:nth-of-type(5n) {
-  animation-delay: 0.43086337826503973s;
+  animation-delay: 0.5656066369618149s;
   left: 44.44444444%;
 }
 .weather .weather-wrapper div:nth-of-type(6n) {
-  animation-delay: 0.7908205653636342s;
+  animation-delay: 0.8080980853530826s;
   left: 55.55555556%;
 }
 .weather .weather-wrapper div:nth-of-type(7n) {
-  animation-delay: 0.8545029344641657s;
+  animation-delay: 0.2215221811806125s;
   left: 66.66666667%;
 }
 .weather .weather-wrapper div:nth-of-type(8n) {
-  animation-delay: 0.48024288752029154s;
+  animation-delay: 0.6126956787929976s;
   left: 77.77777778%;
 }
 .weather .weather-wrapper div:nth-of-type(9n) {
-  animation-delay: 0.2955110698842247s;
+  animation-delay: 0.5421956183779566s;
   left: 88.88888889%;
 }
 .weather .weather-wrapper div:nth-of-type(10n) {
-  animation-delay: 0.00815986993490947s;
+  animation-delay: 0.22692432176172495s;
   left: 100%;
 }
 /*# sourceMappingURL=html-weather.css.map */
