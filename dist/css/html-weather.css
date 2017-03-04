@@ -1,6 +1,6 @@
 /*
  * Made with <3 by bcersows.
- * version 1.1.0
+ * version 1.2.1
  */
 .weather {
   position: relative;
@@ -36,47 +36,47 @@
 }
 @keyframes snow {
   0% {
-    margin-left: 3.5233270864562227px;
+    margin-left: -1.530407151550981px;
     top: 0;
   }
   10% {
-    margin-left: 4.156057327005698px;
+    margin-left: 0.6501684919483086px;
     top: 10%;
   }
   20% {
-    margin-left: -3.355520678506827px;
+    margin-left: -0.43978227838580963px;
     top: 20%;
   }
   30% {
-    margin-left: -4.0337811986591765px;
+    margin-left: -8.947025224198782px;
     top: 30%;
   }
   40% {
-    margin-left: 3.9638990906357074px;
+    margin-left: 7.2560128777523px;
     top: 40%;
   }
   50% {
-    margin-left: -0.12934520611902922px;
+    margin-left: -6.901580823352527px;
     top: 50%;
   }
   60% {
-    margin-left: -0.282236537578644px;
+    margin-left: -2.681640339828686px;
     top: 60%;
   }
   70% {
-    margin-left: 5.510383624409543px;
+    margin-left: -8.29218858879996px;
     top: 70%;
   }
   80% {
-    margin-left: -4.977067471664163px;
+    margin-left: 0.23729087388349335px;
     top: 80%;
   }
   90% {
-    margin-left: -9.646654467662916px;
+    margin-left: 2.4170640885709282px;
     top: 90%;
   }
   100% {
-    margin-left: -0.7740358226639366px;
+    margin-left: -0.8692557254522759px;
     top: 100%;
   }
 }
@@ -209,43 +209,43 @@
   bottom: 30px;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(1n) {
-  animation-delay: 0.16069448864668612s;
+  animation-delay: 0.7228629056868829s;
   left: 0%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(2n) {
-  animation-delay: 0.8874425658616534s;
+  animation-delay: 0.12048183329827s;
   left: 11.11111111%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(3n) {
-  animation-delay: 0.3696753113591644s;
+  animation-delay: 0.6963880864509486s;
   left: 22.22222222%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(4n) {
-  animation-delay: 0.8822340672581559s;
+  animation-delay: 0.9484451914335759s;
   left: 33.33333333%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(5n) {
-  animation-delay: 0.10629762200231818s;
+  animation-delay: 0.6585475805157235s;
   left: 44.44444444%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(6n) {
-  animation-delay: 0.5815077913162068s;
+  animation-delay: 0.21496862520406745s;
   left: 55.55555556%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(7n) {
-  animation-delay: 0.736686493121242s;
+  animation-delay: 0.9483766131547848s;
   left: 66.66666667%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(8n) {
-  animation-delay: 0.22091829490388548s;
+  animation-delay: 0.3740021352652827s;
   left: 77.77777778%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(9n) {
-  animation-delay: 0.5445328397641147s;
+  animation-delay: 0.02821922736269511s;
   left: 88.88888889%;
 }
 .weather .weather-wrapper div.weather-element:nth-of-type(10n) {
-  animation-delay: 0.6734906372795078s;
+  animation-delay: 0.1756122178820485s;
   left: 100%;
 }
 /*# sourceMappingURL=html-weather.css.map */

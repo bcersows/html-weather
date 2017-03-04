@@ -2,7 +2,7 @@
  * Made with <3 by bcersows.
  * Use the variable `weather` to set the weather. Add the class `weather` to the block element which should
  * serve as weather element.
- * version 1.1.0
+ * version 1.2.1
  */
 
 "use strict";
