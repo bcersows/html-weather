@@ -5,9 +5,7 @@
     "dist/js/html-weather.js",
     "dist/css/html-weather.css"
   ],
-  "dependencies": {
-    "jquery": "*"
-  },
+  "dependencies": {},
   "moduleType": [
     "globals"  
   ],
@@ -18,7 +16,8 @@
     "weather",
     "snow",
     "rain",
-    "sun"
+    "sun",
+    "wind"
   ],
   "authors": [
     "bcersows"
