@@ -1,6 +1,6 @@
 /*
  * Made with <3 by bcersows.
- * version 1.0.0
+ * version 1.1.0
  */
 .weather {
   position: relative;
@@ -14,7 +14,7 @@
     top: 0;
     width: 100%;
 
-    div {
+    div.weather-element {
       position: absolute;
     }
 
@@ -23,7 +23,7 @@
         from {top: 0px;}
         to {top: 100%;}
       }
-      div {
+      div.weather-element {
         animation: drops 2s linear infinite;
         background: linear-gradient(lighten(blue, 20%), blue);
         height: 20px;
@@ -60,7 +60,7 @@
         100%  { margin-left: ~"@{random}px"; top: 100%; }
       }
 
-      div {
+      div.weather-element {
         animation: snow 10s linear infinite;
 
         &:after {
@@ -74,7 +74,7 @@
         from {height: 0px;}
         to {height: 100%;}
       }
-      div {
+      div.weather-element {
         animation: rays 3s linear infinite;
         background: linear-gradient(#fbac13, lighten(#fbac13, 20%));
         height: 290px;
@@ -84,12 +84,68 @@
         width: 5px;
       }
     }
+    
+    &.wind {
+      @keyframes wind-bottom {
+        from {left: -15px;}
+        to {left: 100%;}
+      }
+      @keyframes wind-loop {
+        0% {left: 0px;}
+        30% {left: 50%;}
+        35% {left: 55%; bottom: 20%;}
+        40% {left: 60%; bottom: 30%;}
+        45% {left: 55%; bottom: 35%;}
+        50% {left: 50%; bottom: 40%;}
+        55% {left: 45%; bottom: 35%;}
+        60% {left: 40%; bottom: 30%;}
+        65% {left: 45%; bottom: 20%;}
+        70% {left: 50%;}
+        100% {left: 100%;}
+      }
+      div.weather-element {
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background: lightgrey;
+        bottom: 5px;
+        height: 5px;
+        opacity:0.4;
+        left: -15px !important;
+        width: 15px;
+        
+        &:nth-of-type(1n),
+            &:nth-of-type(2n),
+            &:nth-of-type(3n),
+            &:nth-of-type(4n),
+            &:nth-of-type(5n),
+            &:nth-of-type(6n) {
+            animation-name: wind-bottom;
+        }
+        &:nth-of-type(7n),
+            &:nth-of-type(8n),
+            &:nth-of-type(9n),
+            &:nth-of-type(10n) {
+            animation-name: wind-loop;
+        }
+        &:nth-of-type(1n) { bottom: 5px; }
+        &:nth-of-type(2n) { bottom: 8px; }
+        &:nth-of-type(3n) { bottom: 11px; }
+        &:nth-of-type(4n) { bottom: 14px; }
+        &:nth-of-type(5n) { bottom: 17px; }
+        &:nth-of-type(6n) { bottom: 20px; }
+        &:nth-of-type(7n) { bottom: 25px; }
+        &:nth-of-type(8n) { bottom: 27px; }
+        &:nth-of-type(9n) { bottom: 29px; }
+        &:nth-of-type(10n) { bottom: 30px; }
+      }
+    }
 
     // create delay
     .generate-delay(10);
     .generate-delay(@n, @i: 1) when (@i =< @n) {
       @random: `Math.random()`;
-      div:nth-of-type(@{i}n) {
+      div.weather-element:nth-of-type(@{i}n) {
         animation-delay: ~"@{random}s";
         left: (@i - 1)*(100%/(@n - 1));
       }

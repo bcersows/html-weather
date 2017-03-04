@@ -2,7 +2,7 @@
  * Made with <3 by bcersows.
  * Use the variable `weather` to set the weather. Add the class `weather` to the block element which should
  * serve as weather element.
- * version 1.0.0
+ * version 1.1.0
  */
 
 "use strict";
@@ -12,12 +12,14 @@
  *   setSun
  *   setSnow
  *   setRain
+ *   setWind
  *   setClear
  */
 const weather = new function() {
   this.setSun = showSun;
   this.setSnow = showSnow;
   this.setRain = showRain;
+  this.setWind = showWind;
   this.setClear = showClear;
   
   var interval;
@@ -28,7 +30,8 @@ const weather = new function() {
     "none",
     "sun",
     "snow",
-    "rain"
+    "rain",
+    "wind"
   ];
   
   function addElements(amount, duration) {
@@ -61,14 +64,19 @@ const weather = new function() {
     setWeatherInterval(10, 1, 1);
   }
   
+  function showWind() {
+    setWeather(4);
+    setWeatherInterval(10, 1, 1);
+  }
+  
   function setWeather(typeId) {
     var $weather = $('.weather>.weather-wrapper');
-    $weather.removeClass("snow sun rain")
+    $weather.removeClass("snow sun rain wind")
       .addClass(weathers[typeId]);
     $weather.children('.weather-element').remove();
   }
   
-  function setWeatherInterval(columns, delay, maxDuration) {
+  function setWeatherInterval(elementCount, delay, maxDuration) {
     intervalCounter = 0;
     intervalMax = maxDuration;
     
@@ -76,7 +84,7 @@ const weather = new function() {
       clearInterval(interval);
     }
     interval = setInterval(function() {
-      addElements(columns, maxDuration);
+      addElements(elementCount, maxDuration);
     }, delay*1000);
   }
   
