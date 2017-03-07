@@ -7,7 +7,7 @@ Small and simple weather overlay using (mostly) CSS.
 Check it out [here](http://codepen.io/bcersows/full/vgLEEg).
 
 ## Installation
-Available via bower: `bower install --save` or by download the ZIP
+Available via bower: `bower install --save` or by downloading the ZIP
 [directly from GitHub](https://github.com/bcersows/html-weather/archive/master.zip).
 
 ## Usage
